@@ -9,7 +9,7 @@
     .hd{width:100%;}
     .menuBtn{width: max-content; padding:10px; margin:2px;display:flex; flex-direction:column;border:solid grey; justify-content:space-evenly;}
     .innerStrips{width:2em; height:0.5em; background:grey; display:flex;border:solid white 2px;}
-    .menuList{display:none; width:30vw; padding:10px;margin: 5em 1em;}
+    .menuList{display:block; width:30vw; padding:10px;margin: 5em 1em;}
     .menu{padding:5px; margin-left:1em; }
   </style>
 </head>
@@ -30,7 +30,7 @@
   var menuBtn = document.querySelector(".menuBtn");
   var menuList = document.querySelector(".menuList");
   menuBtn.addEventListener("click", function(){
-  menuList.style.display= "block"; });
+  alert("menuBtn clicked");});
     
 </script>
 </body>
