@@ -30,13 +30,16 @@
 <script>
   var menuBtn = document.getElementById("menuBtn");
   var menuList = document.getElementById("menuList");
-  menuBtn.addEventListener("click", function(event){
+  menuBtn.addEventListener("click", function(){
+    menuList.style ="display: inline-block; position: left:0; top:0;";
+  menuList.addEventListener("click", function(event){
   if(event.target !== menuList){
   menuList.style.display = "none";
   }
     else{
       menuList.style.display ="inline-block";
   }
+    }
 </script>
 </body>
 
