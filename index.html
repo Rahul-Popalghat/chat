@@ -30,18 +30,8 @@
   var menuBtn = document.querySelector(".menuBtn");
   var menuList = document.querySelector(".menuList");
   menuBtn.addEventListener("click", function(){
-    menuList.setAttribute("style", "display: inline-block; position:absolute; left:0; top:0;");
-    alert("menuBtn clicked");
-  menuList.addEventListener("click", function(event){
-  if(event.target !== menuList){
-  menuList.style.display = "none";
-    alert("clicked outside hence closing menuList");
-  }
-    else{
-      menuList.style.display ="inline-block";
-     alert("clicked,on list hence remain open");
-  }
-    }
+  menuList.style.display= "block"; });
+    
 </script>
 </body>
 
