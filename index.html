@@ -1,56 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=2.0">   
-<title> Node server demo</title>
-  <style>
-    #{box-sizing: border-box;}
-    .hd{width:100%;}
-    .menuBtn{width: max-content; padding:10px; margin:2px;display:flex; flex-direction:column;border:solid grey; justify-content:space-evenly;}
-    .innerStrips{width:2em; height:0.5em; background:grey; display:flex;border:solid white 2px;}
-    .menuList{display:none;  padding:10px; position:absolute; top:0; left:0;}
-    .menu{padding:5px; margin-left:1em; }
-  </style>
-</head>
-<body>
-<div class="hd">
- <div class="menuBtn">
-   <div class="innerStrips"></div>
-   <div class="innerStrips"></div>
-   <div class="innerStrips"></div>
- </div>
-</div>
-<div class="menuList">
-  <div class="menuBtn">
-   <div class="innerStrips"></div>
-   <div class="innerStrips"></div>
-   <div class="innerStrips"></div>
- </div>
-  <div class="menu">Home</div>
-  <div class="menu">About Us</div>
-  <div class="menu">Contact and Feedback</div>
-</div>
-<script>
-  var menuBtn = document.querySelector(".menuBtn");
-  var menuList = document.querySelector(".menuList");
-  var menu = document.querySelector(".menu");
-  document.addEventListener("click", (event)=> {
-    if(event.target === menuBtn){
-      menuList.style.display="block"; 
-      menuBtn.style.display ="none";
-    }
-    else{
-      menuList.style.display="none"
-    }
-  });
-    
-</script>
-</body>
-
-</html>
-<!DOCTYPE html>
-<html>
 <head> 
 <meta charset="UTF-8"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
