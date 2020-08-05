@@ -49,3 +49,49 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title> Node server demo</title> <style> 
+*{box-sizing: border-box;} 
+.hd{width:100%;} 
+.menuBtn{width: max-content; padding:10px; margin:2px;display:flex; flex-direction:column;border:solid grey; justify-content:space-evenly;}
+.innerStrips{width:2em; height:0.5em; background:grey; display:flex;z-index:-1; border:solid white 2px;} 
+.menuList{display:none; padding:10px; z-index:2;position:absolute;} 
+.menu{padding:5px; } 
+</style>
+</head>
+<body>
+<div class="hd"> 
+<div class="menuBtn"> 
+<div class="innerStrips"></div> <div class="innerStrips"></div> <div class="innerStrips"></div> </div>
+</div>
+
+<div class="menuList">
+<div class="menu"><a href="https://www.google.com">Home</a></div> <div class="menu"><a href="https://www.google.com">About Us</a></div>
+<div class="menu"><a href="https://www.google.com">Contact</a></div>
+</div>
+
+<div class="body">body goes here</div>
+<script> 
+
+var menuBtn = document.querySelector(".menuBtn"); 
+var menuList = document.querySelector(".menuList"); 
+var menu = document.querySelector(".menu");
+var innerStrips = document.querySelector(".innerStrips");
+ document.addEventListener("click", (event)=> { if(event.target != menuBtn){
+ 
+menuList.style.display = "none";
+ 
+ }else{
+ 
+ menuList.style.display = "block";
+ } 
+ }); 
+</script>
+</body> 
+</html>
+
+
