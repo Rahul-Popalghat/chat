@@ -37,8 +37,8 @@
   var menu = document.querySelector(".menu");
   menuBtn.addEventListener("click", function(){
   menuList.style.display = "block";
-  menu.addEventListener("click", (event) => {
-  if(event.target == menu){
+  window.addEventListener("click", (event) => {
+  if(event.target === menu){
   alert(this.innerText + "menu cliked");
   }else{
   menuList.style.display ="none";
