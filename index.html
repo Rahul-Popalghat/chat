@@ -35,17 +35,7 @@
   var menuBtn = document.querySelector(".menuBtn");
   var menuList = document.querySelector(".menuList");
   var menu = document.querySelector(".menu");
-  menuBtn.addEventListener("click", function(){
-  menuList.style.display = "block";
-  window.addEventListener("click", (event) => {
-  if(event.target === menu){
-  alert(this.innerText + "menu cliked");
-  }else{
-  menuList.style.display ="none";
-  }
-  });
-  
-  });
+  document.window.addEventListener("click", (event)=> {if(event.target == menuBtn){menuList.style.display="block"; menuBtn.style.display ="none";}else{menuList.style.display="none"}});
     
 </script>
 </body>
